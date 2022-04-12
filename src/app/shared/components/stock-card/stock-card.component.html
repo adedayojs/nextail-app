@@ -1,4 +1,8 @@
-<section>
+<section (mouseenter)="toggleHover()" (mouseleave)="toggleHover()">
+  <div *ngIf="displayHover" class="fade-in hover d-flex content-center items-center">
+    <button class="pointer" (click)="displayConfirmation()">Mark Complete</button>
+  </div>
+
   <div class="card-image">
     <span></span>
     <img [src]="stock.imageUrl">

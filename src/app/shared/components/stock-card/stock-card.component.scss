@@ -2,6 +2,7 @@ section {
   background: #fff;
   border-radius: 3px;
   overflow: hidden;
+  position: relative;
 
   .card {
     &-image {
@@ -27,5 +28,23 @@ section {
     &-body {
       padding: 10px;
     }
+  }
+}
+
+.hover {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 999;
+  background: #f3f6f86b;
+
+  button {
+    background: #29394891;
+    padding: 12px 24px;
+    border-radius: 50px;
+    border: #d6d4d2 solid 3px;
+    color: #d6d4d2;
+    font-size: 18px;
+    font-weight: 600;
   }
 }

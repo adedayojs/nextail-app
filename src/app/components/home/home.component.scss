@@ -1,9 +1,10 @@
 .main-page {
   padding: 7px;
+  padding-bottom: 15px;
   background: #f5f7fa;
 
   .stock-list {
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 50% 50%;
   }
   .stock-item {
     margin: 3px;
@@ -21,6 +22,15 @@
       top: 5px;
       left: 5px;
       line-height: 7px;
+      z-index: 9;
+    }
+  }
+}
+
+@media (min-width: 480px) {
+  .main-page {
+    .stock-list {
+      grid-template-columns: 25% 25% 25% 25%;
     }
   }
 }

@@ -8,11 +8,20 @@ import { transformMockStocks } from '../utils/stocks';
   providedIn: 'root',
 })
 export class StockService {
-  rawStocks = mockStock;
-  refinedStock = transformMockStocks(mockStock);
+  private rawStocks = mockStock;
+  private refinedStock = transformMockStocks(mockStock);
   constructor() {}
 
   fetchAllStock(): Observable<Array<IStockModel>> {
+    // Simulate API call
     return of(this.refinedStock);
+  }
+  removeStock(id: number) {
+    const stockIndex = this.refinedStock.findIndex(
+      (stock) => stock.code === id
+    );
+    if (stockIndex > -1) {
+      this.refinedStock.splice(stockIndex, 1);
+    }
   }
 }
