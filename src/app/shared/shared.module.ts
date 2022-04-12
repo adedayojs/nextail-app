@@ -5,7 +5,18 @@ import { StockCoverageStatusComponent } from './components/stock-coverage-status
 import { DecimalToPercentagePipe } from './pipes/decimal-to-percentage.pipe';
 import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
 import { CoverageToStatusPipe } from './pipes/coverage-to-status.pipe';
+import { ChartComponent } from './components/stock-card/chart/chart.component';
 
+import { FusionChartsModule } from 'angular-fusioncharts';
+
+// Import FusionCharts library and chart modules
+import * as FusionCharts from 'fusioncharts';
+import * as Charts from 'fusioncharts/fusioncharts.charts';
+
+import * as FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+
+// Pass the fusioncharts library and chart modules
+FusionChartsModule.fcRoot(FusionCharts, Charts, FusionTheme);
 @NgModule({
   declarations: [
     StockCardComponent,
@@ -13,8 +24,9 @@ import { CoverageToStatusPipe } from './pipes/coverage-to-status.pipe';
     DecimalToPercentagePipe,
     ProgressBarComponent,
     CoverageToStatusPipe,
+    ChartComponent,
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, FusionChartsModule],
   exports: [StockCardComponent, DecimalToPercentagePipe],
 })
 export class SharedModule {}

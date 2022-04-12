@@ -15,7 +15,9 @@
     <div class="card-price">
       <p class="light-text">{{stock.price | currency:'EUR'}}</p>
     </div>
-    <div class="card-chart"></div>
+    <div class="card-chart">
+      <app-chart [stock]="stock"></app-chart>
+    </div>
     <div class="card-stockout">
       <app-stock-coverage-status [stock]="stock"></app-stock-coverage-status>
     </div>
