@@ -1,11 +1,26 @@
 .main-page {
   padding: 7px;
-  background: #F5F7FA;
+  background: #f5f7fa;
 
   .stock-list {
     grid-template-columns: 25% 25% 25% 25%;
   }
   .stock-item {
     margin: 3px;
+    position: relative;
+    span {
+      position: absolute;
+      background: #c9d1db;
+      padding: 10px;
+      border-radius: 7px;
+      width: 7px;
+      height: 7px;
+      font-size: 15px;
+      color: #fff;
+      font-weight: 900;
+      top: 5px;
+      left: 5px;
+      line-height: 7px;
+    }
   }
 }
