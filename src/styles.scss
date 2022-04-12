@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+.d-flex {
+  display: flex;
+}
+.content-center {
+  justify-content: center;
+}
+.item-center {
+  align-items: center;
+}
+.m-auto {
+  margin: auto;
+}
+.light-text {
+  color: #00000039;
+}
+.dark-text {
+  color: #000;
+}
