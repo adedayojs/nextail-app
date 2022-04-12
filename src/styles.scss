@@ -5,6 +5,9 @@
 .d-flex {
   display: flex;
 }
+.d-grid {
+  display: grid;
+}
 .content-center {
   justify-content: center;
 }
@@ -15,8 +18,39 @@
   margin: auto;
 }
 .light-text {
-  color: #00000039;
+  color: #8b96a4;
 }
 .dark-text {
   color: #000;
+}
+
+.p-0 {
+  padding: 0;
+}
+.p-t-0 {
+  padding-top: 0;
+}
+.p-b-0 {
+  padding-bottom: 0;
+}
+.p-l-0 {
+  padding-left: 0;
+}
+.p-r-0 {
+  padding-right: 0;
+}
+.m-0 {
+  margin: 0;
+}
+.m-t-0 {
+  margin-top: 0;
+}
+.m-b-0 {
+  margin-bottom: 0;
+}
+.m-l-0 {
+  margin-left: 0;
+}
+.m-r-0 {
+  margin-right: 0;
 }

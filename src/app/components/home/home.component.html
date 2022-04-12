@@ -1,1 +1,12 @@
 <app-header></app-header>
+
+<section class="main-page">
+  <div class="stock-list d-grid">
+    <div class="stock-item" *ngFor="let stock of stocks">
+      <app-stock-card [stock]="stock"></app-stock-card>
+    </div>
+    <div class="stock-item" *ngFor="let stock of stocks">
+      <app-stock-card [stock]="stock"></app-stock-card>
+    </div>
+  </div>
+</section>

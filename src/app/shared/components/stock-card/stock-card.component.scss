@@ -1,0 +1,31 @@
+section {
+  background: #fff;
+  border-radius: 3px;
+  overflow: hidden;
+
+  .card {
+    &-image {
+      img {
+        width: 100%;
+      }
+    }
+    &-title {
+      p {
+        font-size: 12px;
+        font-weight: 400;
+      }
+      h3 {
+        font-weight: 400;
+        margin-top: 5px;
+        font-size: 15px;
+      }
+    }
+    &-price {
+      margin: 2em auto;
+    }
+
+    &-body {
+      padding: 10px;
+    }
+  }
+}

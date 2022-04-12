@@ -1,0 +1,11 @@
+.main-page {
+  padding: 7px;
+  background: #F5F7FA;
+
+  .stock-list {
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+  .stock-item {
+    margin: 3px;
+  }
+}
