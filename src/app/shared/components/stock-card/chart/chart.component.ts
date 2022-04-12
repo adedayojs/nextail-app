@@ -20,10 +20,6 @@ export class ChartComponent implements OnInit {
     this.updateDataSource();
   }
 
-  onSelect(event: any) {
-    console.log(event);
-  }
-
   updateDataSource() {
     const sizes = this.stock.size_stock;
     for (const [key, val] of Object.entries(sizes)) {

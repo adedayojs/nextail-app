@@ -24,7 +24,6 @@ export class StockCardComponent implements OnInit {
     );
     if (response) {
       // Make Api call to remove stock options
-      console.log('Removing stock Item');
       this.stockService.removeStock(this.stock.code);
     }
   }
