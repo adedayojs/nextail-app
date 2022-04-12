@@ -1,0 +1,18 @@
+<section>
+  <div class="card-image">
+    <img [src]="stock.imageUrl">
+  </div>
+  <div class="card-body">
+    <div class="card-title">
+      <p class="light-text">{{stock.code}}</p>
+      <h3 class="dark-text">{{stock.name}}</h3>
+    </div>
+    <div class="card-price">
+      <p class="light-text">{{stock.price | currency:'euro'}}</p>
+    </div>
+    <div class="card-chart"></div>
+    <div class="card-stockout">
+      <app-stock-coverage-status [stock]="stock"></app-stock-coverage-status>
+    </div>
+  </div>
+</section>
