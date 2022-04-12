@@ -5,14 +5,20 @@
 .d-flex {
   display: flex;
 }
+.flex-col {
+  flex-direction: column;
+}
 .d-grid {
   display: grid;
 }
 .content-center {
   justify-content: center;
 }
-.item-center {
+.items-center {
   align-items: center;
+}
+.items-end {
+  align-items: end;
 }
 .m-auto {
   margin: auto;

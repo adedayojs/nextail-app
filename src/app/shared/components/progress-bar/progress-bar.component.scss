@@ -1,0 +1,19 @@
+.bar {
+  width: 100%;
+  height: 7px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #e3e7ec;
+  &-item {
+    height: 100%;
+    &.LOW {
+      background: red;
+    }
+    &.MEDIUM {
+      background: orange;
+    }
+    &.HIGH {
+      background: #ABD376;
+    }
+  }
+}

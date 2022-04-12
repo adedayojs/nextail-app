@@ -5,6 +5,6 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class DecimalToPercentagePipe implements PipeTransform {
   transform(value: number): string {
-    return `${value * 100} %`;
+    return `${value * 100}%`;
   }
 }

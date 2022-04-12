@@ -1,11 +1,32 @@
-.bar {
-  width: 100%;
-  height: 7px;
-  border-radius: 10px;
-  overflow: hidden;
-  &-item {
-    width: 50%;
-    height: 100%;
-    background: green;
+.stock-percent {
+  span {
+    font-size: 12px;
+    font-weight: 300;
+    margin: auto 3px;
+  }
+  .percent {
+    font-size: 25px;
+    font-weight: 400;
+  }
+}
+.progress-bar {
+  border-top: solid 0.5px #e4e8ed;
+  border-bottom: solid 0.5px #e4e8ed;
+  margin: 1em auto;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+.coverage {
+  p {
+    font-weight: 300;
+    &.LOW {
+      color: red;
+    }
+    &.MEDIUM {
+      color: orange;
+    }
+    &.HIGH {
+      color: #abd376;
+    }
   }
 }

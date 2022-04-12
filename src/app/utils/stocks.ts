@@ -1,4 +1,4 @@
-import { IStockBaseModel, IStockModel } from '../models/stock.model';
+import { COVERAGE, IStockBaseModel, IStockModel } from '../models/stock.model';
 
 export function transformMockStocks(stock: IStockBaseModel[]): IStockModel[] {
   const processedStock: IStockModel[] = stock.map((stock) => {
@@ -18,4 +18,24 @@ export function transformMockStocks(stock: IStockBaseModel[]): IStockModel[] {
     };
   });
   return processedStock;
+}
+
+/**
+ * @description This function return the coverage value based on a measurement of 100
+ * @description It takes a minimum of 0 and maximum of 100
+ * @export
+ * @param {number} num
+ * @return {*}  {COVERAGE}
+ */
+export function coverageDeterminant(num: number): COVERAGE {
+  if (num >= 75) {
+    return COVERAGE.HIGH;
+  }
+  if (num >= 50 && num < 75) {
+    return COVERAGE.MEDIUM;
+  }
+  if (num < 50) {
+    return COVERAGE.LOW;
+  }
+  return COVERAGE.LOW;
 }

@@ -21,3 +21,9 @@ export interface IStockModel extends IStockBaseModel {
   imageUrl: string;
   size_stock: IStockSize;
 }
+
+export enum COVERAGE {
+  HIGH = 'HIGH',
+  MEDIUM = 'MEDIUM',
+  LOW = 'LOW',
+}
